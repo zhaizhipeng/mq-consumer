@@ -19,7 +19,7 @@ public class Consumer {
         DefaultMQPushConsumer consumer = new DefaultMQPushConsumer("quick_consumer_group");
 
         // Specify name server addresses.
-        consumer.setNamesrvAddr(RocketMQConstants.NAME_SERVER);
+        consumer.setNamesrvAddr(RocketMQConstants.NAME_SERVER_SINGLE);
 
         consumer.setConsumeFromWhere(ConsumeFromWhere.CONSUME_FROM_FIRST_OFFSET);
 
